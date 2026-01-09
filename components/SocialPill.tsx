@@ -18,7 +18,7 @@ const iconMap = {
 const labelMap = {
   instagram: '@raghavshahhh',
   linkedin: 'Raghav Shah',
-  youtube: 'RAGS Pro',
+  youtube: 'raghavshahhh',
 }
 
 // Colorful icon styles

@@ -4,10 +4,10 @@ import ProfileSection from '@/components/ProfileSection'
 import SocialLinks from '@/components/SocialLinks'
 import HeroHeadline from '@/components/HeroHeadline'
 import CardStack from '@/components/CardStack'
-import PhotoGallery from '@/components/PhotoGallery'
 import ScrollReveal from '@/components/ScrollReveal'
 import SmoothCursor from '@/components/SmoothCursor'
 import FloatingElements from '@/components/FloatingElements'
+import GitHubProjects from '@/components/GitHubProjects'
 
 // Portfolio data
 const portfolioData = {
@@ -18,17 +18,9 @@ const portfolioData = {
   },
   socialLinks: {
     instagram: 'https://instagram.com/raghavshahhh',
-    linkedin: 'https://www.linkedin.com/in/bhupederpratap/',
-    youtube: 'https://youtube.com/@ragspro',
+    linkedin: 'https://www.linkedin.com/in/raghavshahhh/',
+    youtube: 'https://youtube.com/@raghavshahh?si=iR2m5BLxuDW7MngK',
   },
-  gallery: [
-    { id: '1', src: '/images/gallery/project-1.webp', alt: 'LawAI Dashboard' },
-    { id: '2', src: '/images/gallery/project-2.webp', alt: 'RAGS AI Interface' },
-    { id: '3', src: '/images/gallery/project-3.webp', alt: 'Glow Landing Page' },
-    { id: '4', src: '/images/gallery/project-4.webp', alt: 'AI Automation Tool' },
-    { id: '5', src: '/images/gallery/project-5.webp', alt: 'SaaS Dashboard' },
-    { id: '6', src: '/images/gallery/project-6.webp', alt: 'Mobile App Design' },
-  ],
 }
 
 export default function Home() {
@@ -78,9 +70,11 @@ export default function Home() {
             </div>
           </ScrollReveal>
 
-          {/* Photo Gallery */}
+          {/* GitHub Projects - Scrollable */}
           <ScrollReveal delay={0.5}>
-            <PhotoGallery images={portfolioData.gallery} />
+            <div className="mb-16">
+              <GitHubProjects />
+            </div>
           </ScrollReveal>
         </div>
       </div>
