@@ -51,9 +51,9 @@ const cards = [
   {
     id: 'ragsai',
     logo: '/images/logos/ragsai.png',
-    title: 'RAGS AI',
+    title: 'RAGS-AI',
     subtitle: 'Jarvis-style AI assistant with voice recognition and Mac integration.',
-    href: '#ragsai',
+    href: 'https://rags-ai-website.vercel.app',
   },
   {
     id: 'lead-genrater',
